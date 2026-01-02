@@ -10,6 +10,25 @@ Two datasets were used:
 By comparing these datasets, the project examines potential mismatches between shopping intention and actual behaviour.
 
 ---
+## Proof of Work
+
+**Question:**  
+Can online shopping purchase behavior be predicted from session-level clickstream data, and how does this compare to how shoppers perceive their own behavior?
+
+**What I Built:**  
+- Binary classification models (Logistic Regression, Decision Tree) to predict purchase intent  
+- K-Means clustering and PCA to uncover behavioral session patterns  
+- Comparative analysis between objective clickstream data and self-reported survey responses
+
+**Key Results:**  
+- Logistic Regression achieved ~**88% accuracy** on the UCI dataset  
+- Decision Tree achieved ~**85% accuracy**, highlighting different error trade-offs  
+- PCA + clustering revealed distinct browsing and purchasing behavior groups  
+- Survey results showed noticeable gaps between perceived and actual shopping behavior
+
+**Artifacts:**  
+- PCA cluster visualizations  
+- Confusion matrices and model evaluation outputs  
 
 ## Methods
 The following machine learning techniques were applied:
@@ -25,14 +44,6 @@ The following machine learning techniques were applied:
 - Principal Component Analysis (PCA)
 
 A standard train/test split was used for model evaluation. Feature scaling was applied where required (logistic regression and k-means), while tree-based models were trained on unscaled data.
-
----
-
-## Key Results
-- Logistic regression achieved approximately **88% accuracy** on the UCI dataset.
-- Decision tree classification achieved approximately **85% accuracy**, with different error trade-offs compared to logistic regression.
-- K-means clustering combined with PCA revealed distinct behavioural patterns across online sessions.
-- Models trained on the survey data produced unstable results due to the extremely small sample size, highlighting the limitations of self-reported data.
 
 ---
 
